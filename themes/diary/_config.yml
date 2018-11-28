@@ -195,6 +195,7 @@ mediapage:
     - '18.jpg'
     - '19.jpg'
     - '20.jpg'
+    
 
 contactpage:
   title: "Contact us"
@@ -204,7 +205,7 @@ contactpage:
   address: 
     title: "Headquarters"
     addresslines:
-      - "Engapuzha Po. "
+      - "Puduppadi Po. "
       - "Kozhikode, Kerala State"
       - "India, Pin.673586 "
   contact:
@@ -222,7 +223,7 @@ newspage:
 
 footer:
   address:
-    - "Engapuzha Po"
+    - "Puduppadi Po"
     - "Kozhikode, Kerala State."
 
   phone:
