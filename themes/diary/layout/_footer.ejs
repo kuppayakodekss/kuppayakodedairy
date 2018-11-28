@@ -1,0 +1,55 @@
+
+	<!-- footer -->
+	<div class="footer">
+		<!-- container -->
+		<div class="container">
+			<div class="col-md-6 footer-left  wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+				<ul>
+					<% for (var i in theme.menu){ %>
+						<li><a href="<%- url_for(theme.menu[i].path) %>"><%= i %></a></li>
+					<% } %>
+				</ul>
+			</div>
+			<div class="col-md-3 footer-middle wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+				<h3>Address</h3>
+				<div class="address">
+					<p>
+						<% for (var i in theme.footer.address){ %>
+							<span><%= theme.footer.address[i]%></span>
+						<% } %>
+					</p>
+				</div>
+				<div class="phone">					
+					<% for (var i in theme.footer.phone){ %>
+						<p><%= theme.footer.phone[i]%></p>
+					<% } %>
+				</div>
+			</div>
+			<div class="col-md-3 footer-right  wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+				<a href="<%- url_for("/") %>"><img src="<%- url_for("images/logo.png") %>"/></a>
+				<p><%= theme.footer.subtitle %></p>
+			</div>
+			<div class="clearfix"> </div>	
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //footer -->
+	<div class="copyright">
+		<!-- container -->
+		<div class="container">
+			<div class="copyright-left wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+				<p>Copyrights © 2018 <%= theme.title %>. Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+			</div>
+			<div class="copyright-right wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+				<ul>
+					<% for (var i in theme.footer.socialmedia){ %>
+						<li><a href="<%= theme.footer.socialmedia[i]%>" class="twitter <%= i %>"> </a></li>
+					<% } %>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<!-- //container -->
+	</div>
+</body>
+</html>

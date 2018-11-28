@@ -1,0 +1,115 @@
+	<div class="about-top">
+		<!-- container -->
+		<div class="container">
+			<div class="about-info wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+				<h3><%= theme.aboutpage.section1.title %></h3>
+				<h5>
+					<% for (var i in theme.aboutpage.section1.subtitle){ %>
+	                <span><%= theme.aboutpage.section1.subtitle[i]%></span>
+	              <% } %>
+          		</h5>
+			</div>
+			<div class="banner-bottom-grids a-banner-bottom-grids">
+				<div class="col-md-5 banner-bottom-right wow fadeInRight animated animated" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s;">
+					<img src=<%- url_for("images/a1.jpg") %> alt="">
+				</div>
+				<div class="col-md-7 a-banner-bottom-text">
+					<div class="jumbotron banner-bottom-left wow fadeInLeft animated animated" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s;">
+					  <h3><%= theme.aboutpage.section1.heading %></h3>
+						<h5>
+							<% for (var i in theme.aboutpage.section1.subtitle2){ %>
+				                <span><%= theme.aboutpage.section1.subtitle2[i]%></span>
+				            <% } %>
+						</h5>
+						<p>
+			              <% for (var i in theme.aboutpage.section1.body){ %>
+			                <span><%= theme.aboutpage.section1.body[i]%></span>
+			              <% } %>					
+						</p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //about -->
+	<!-- about-bottom -->
+	<div class="about-bottom">
+		<!-- container -->
+		<div class="container">
+			<h3 class="wow fadeInRight animated" style="visibility: visible;"><%= theme.aboutpage.section2.title %></h3>
+			<div class="about-bottom-grids">
+				<div class="col-md-6 about-bottom-left wow fadeInLeft animated animated" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s;">
+					<h4><%= theme.aboutpage.section2.leftheading %></h4>
+					<p>
+						<% for (var i in theme.aboutpage.section2.leftbody){ %>
+		                <span><%= theme.aboutpage.section2.leftbody[i]%></span>
+		              <% } %>
+					</p>
+				</div>
+				<div class="col-md-6 about-bottom-left about-bottom-right wow fadeInRight animated animated" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s;">
+					<h4><%= theme.aboutpage.section2.rightheading %></h4>
+					<p>
+						<% for (var i in theme.aboutpage.section2.rightbody){ %>
+		                <span><%= theme.aboutpage.section2.rightbody[i]%></span>
+		              <% } %>
+					</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //about-bottom -->
+	<!-- team -->
+	<div class="team">
+		<!-- container -->
+		<div class="container">
+			<div class="team-info">
+				<h3 class="wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">Meet Our Team</h3>
+
+				<% for (var i in theme.aboutpage.members){ %>
+				    <div class="team-grids">
+						<div class="col-md-3 team-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+							<img src="<%- url_for("images/" + theme.aboutpage.members[i].img)%>" alt="">
+							<h6><%= theme.aboutpage.members[i].name %></h6>
+							<p><%= theme.aboutpage.members[i].desc %></p>
+						</div>
+					</div>
+				<% } %>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //team -->
+
+		<!-- products-top -->
+	<div class="products-top">
+		<!-- container -->
+		<div class="container">
+			<h3 class="wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;"><%= theme.aboutpage.otherMembers.title %></h3>
+			<h5 class="wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+				<% for (var i in theme.aboutpage.otherMembers.subtitle){ %>
+                <span><%= theme.aboutpage.otherMembers.subtitle[i]%></span>
+              <% } %>
+      		</h5>
+			<div class="products-top-grids wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+
+				<% for (var i in theme.aboutpage.otherMembers.memberlist){ %>
+				    <div class="col-md-4 products-grid otherMembers">
+<!-- 					<div class="products-number">
+						<p>1.</p>
+					</div> -->
+					<div class="products-text">
+						<h4><%= theme.aboutpage.otherMembers.memberlist[i].name %></h4>
+						<p><%= theme.aboutpage.otherMembers.memberlist[i].desc %></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<% } %>
+			</div>
+		</div>
+		<!-- container -->
+ 	</div>
+	<!-- //products-top -->

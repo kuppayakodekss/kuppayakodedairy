@@ -1,0 +1,121 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= theme.title %> - <%= page.title%></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="keywords" content="Tillage Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstarp-css -->
+<link href=<%- url_for("css/bootstrap.css") %> rel="stylesheet" type="text/css" media="all" />
+<!--// bootstarp-css -->
+<!-- css -->
+<link rel="stylesheet" href=<%- url_for("css/style.css") %> type="text/css" media="all" />
+<!--// css -->
+<script src=<%- url_for("/js/jquery-1.11.1.min.js") %>></script>
+<!--fonts-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,800,700,600' rel='stylesheet' type='text/css'>
+<!--/fonts-->
+<link href=<%- url_for("css/animate.css") %> rel="stylesheet" type="text/css" media="all">
+<script src=<%- url_for("/js/wow.min.js") %>></script>
+<script>
+	 new WOW().init();
+</script>
+<!-- pop-up -->
+<link rel="stylesheet" href=<%- url_for("css/touchTouch.css") %> type="text/css" media="all" />
+
+<script type="text/javascript" src=<%- url_for("/js/jquery.fancybox.js") %>></script>
+	   <script type="text/javascript">
+			$(document).ready(function() {
+				/*
+				 *  Simple image gallery. Uses default settings
+				 */
+
+				$('.fancybox').fancybox();
+
+			});
+		</script>
+<!-- pop-up -->
+</head>
+<body>
+	<!-- banner -->
+	<div class="banner <% if (!is_home()){ %> a-banner <% } %> ">
+		<!-- container -->
+		<div class="container">
+			<div class="header">
+				<div class="head-logo">
+					<a href="index.html"><img src="<%- url_for("images/logo1.png") %>" alt="" /></a>
+				</div>
+				<div class="top-nav">
+					<span class="menu"><img src="images/menu.png" alt=""></span>
+					<ul class="nav1">
+						<% for (var i in theme.menu){ %>
+				          <li class="hvr-sweep-to-bottom <%= is_current(theme.menu[i].path) ? 'active' : '' %>"><a href="<%- url_for(theme.menu[i].path) %>"><%= i %><i><%= theme.menu[i].subtitle %></i></a></li>
+				        <% } %>
+						<div class="clearfix"> </div>
+					</ul>
+					<!-- script-for-menu -->
+							 <script>
+							   $( "span.menu" ).click(function() {
+								 $( "ul.nav1" ).slideToggle( 300, function() {
+								 // Animation complete.
+								  });
+								 });
+							</script>
+						<!-- /script-for-menu -->
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+
+		<% if (is_home()){ %>
+
+		<!-- //container -->
+		<div class="container">
+				<script src=<%- url_for("/js/responsiveslides.min.js") %>></script>
+					 <script>
+						// You can also use "$(window).load(function() {"
+						$(function () {
+						  // Slideshow 4
+						  $("#slider3").responsiveSlides({
+							auto: true,
+							pager: true,
+							nav: false,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+							  $('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+							  $('.events').append("<li>after event fired.</li>");
+							}
+						  });
+					
+						});
+					  </script>
+			<div  id="top" class="callbacks_container">
+				<ul class="rslides" id="slider3">
+					<% for (var i in theme.header){ %>
+		                <li>
+							<div class="banner-info">
+									<h2><%- theme.header[i].title %></h2>
+									<div class="line"> </div>
+									<p><%= theme.header[i].subtitle %></p>
+							</div>
+						</li>
+		              <% } %>					
+				</ul>
+			</div>
+		</div>
+
+		<% } %>
+	</div>
+	<!-- //banner -->

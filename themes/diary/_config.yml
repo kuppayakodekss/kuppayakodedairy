@@ -1,0 +1,271 @@
+# Header
+
+title: "Kuppayakode Dairy cooperative"
+menu:
+  Home:
+    path: /
+    subtitle: 'This is the homepage'
+  About:
+    path: /about
+    subtitle: 'This is about us'
+  Downloads: 
+    path: /downloads
+    subtitle: 'Gallery'
+  News: 
+    path: /news
+    subtitle: 'Get online, off the field'
+  Contact:
+    path: /mail
+    subtitle: 'This is the contact page'
+rss: /atom.xml
+
+header:
+  -
+    title: "Steady <span>growth</span> for your farm!"
+    subtitle: "Dairy generates direct source of income, direct employment and its by-product dung help in maintaining soil productivity and fertility."
+  -
+    title: "<span>Blend with Nature</span>"
+    subtitle: "Milk is a staple diet but Everyone Needs it and enjoyed throughout the world for thousands of years "
+  -
+    title: "<span>We Make You Smile</span>"
+    subtitle: "Dairy Society extends its support to the farmers"
+
+#Homepage
+
+homepage:
+  section1: 
+    title: "Dairy Co-operative Society"
+    subtitle: 
+      - "The spirit of Dairy Society in India is almost entirely based on the "
+      - "philosophy of co-operation."
+    body:
+      - "Co-operation means working together. The principle of co-operation is as old as the human society itself and working together in a team for attaining certain objectives. Modern cooperative societies in Kerala have the division of Primary (Dairy society), Regional, and Milma (State). In Kerala, dairy activity is developed on co-operative basis. The keen interest of state government and support of farmers are the main reasons for co-operative dairy development in Kerala. The dairy activity is now largely based upon a three tier system under which, the primary village cooperative societies are linked with Regional union and state federation which are guided by the Dairy Board of Kerala."
+      - "Dairying is an important source of subsidiary income to small/marginal farmers and agricultural labourers. The manure from animals provides a good source of organic matter for improving soil fertility and crop yields. The gober gas from the dung is used as fuel for domestic purposes as also for running engines for drawing water from well. The surplus fodder and agricultural by-products are gainfully utilised for feeding the animals. Almost all draught power for farm operations and transportation is supplied by bullocks. Since agriculture is mostly seasonal, there is a possibility of finding employment throughout the year for many persons through dairy farming. Thus, dairy also provides employment throughout the year. The main beneficiaries of dairy programmes are small/marginal farmers and landless labourers."
+
+  section2:
+    title:  "Our Services"
+    subtitle: 
+      - "Dairy Society provides general and exclusive services "
+      - "to the farmers."
+    body: 
+      - "Dairy society has milk collection centre either in an owned or hired premise. Each morning and evening, the milk producers bring milk in their own containers (stainless steel) to the society. A representative sample of milk is drawn for testing the quality milk. The test results are recorded against each sample number in the Fat Test Register. The society pays the pourers on a regular interval as per the decision of the managing committee. Besides regular payment of milk price, the society at the end of the year pays dividend on paid up share capital."
+      - "Society provides to its members the services like (a) Balanced cattle feed, (b) Fodder seeds of improved variety, (c) Services for animal health care, (d) Services for breeding of milch animals, (e) Patronage based portion of the surplus, (f) Contribute to village development."
+    services:
+      -
+        title: "Add info"
+        subtitle: "Add info"
+        img: "1.png"
+      -
+        title: "Add info"
+        subtitle: "Add info"
+        img: "2.png"
+      -
+        title: "Add info"
+        subtitle: "Add info"
+        img: "3.png"
+      -
+        title: "Add info"
+        subtitle: "Add info"
+        img: "4.png"
+  section3:
+    title: "Testimonials"
+    subtitle:
+      - "Add info"
+      - "Add info"
+    testimonial: "Add info"
+
+aboutpage:
+  section1:
+    title: "KUPPAYAKODE MILK PRODUCERS COOPERATIVE SOCIETY"
+    subtitle:
+      - "An ISO 22000-2005 level organisation"
+      - "AFFILIATED IN MILMA"
+    heading: "STORY OF KUPPAYAKODE KSHEEROLPADAKA SAHAKARANA SANGHAM"
+    subtitle2:
+      - "Add info"
+      - "Add info"
+    body: 
+      - "Kuppayakode Milk Producers Cooperative Society Ltd No. F.17 /1 Apcos has registered in 1959 under the Kerala Co-operative Societies Act 1954 and working under the control of Dairy Development Department.
+Dedication and skill displayed in management from its very beginning helped to achieve reputation and rapid growth'.
+Long years of experience and service in dairying raised good will of the society and now competent to meet any challenges in the field. The operational area of the society is spread over major parts of Puduppadi Panchayath, some parts of Kodanchery and Kattippara Panchayaths'.
+Society has 27 milk collection centres and presently procuring an average of 3500 litters of milk per day'.
+The economy of operational area depends on Agriculture. Poor Agricultural income Force the people to engage in cattle rearing and dairy farming.
+No doubt, among agricultural operations dairy farming is most promising one. The climate and geographical conditions of our area are quite suitable for dairy farming'.
+Kuppayakode Ksheerolpadaka sahakarana sangam is located in the heart of fasily devetoping Engapuzha. Kozhikode - Mysore National highway is passing very close to it."
+  section2:
+    title: "Our exclusive Activities"
+    leftheading: "Activities"
+    leftbody: 
+      - "Provide modern infrastructure facilities for procurement chilling and supplying of milk."
+      - "Fodder project for dairying framers in Koduvally block."
+      - "Provide training and facilitation to farmers."
+    rightheading: "Recognitions"
+    rightbody: 
+      - "An ISO 22000-2005 level organisation"
+      - "Strict to satisfy the requirements of FSSA 2006"
+      - "Quality of milk and better price to framers"
+  members:
+    -
+      name: 'BABU JOSEPH'
+      desc: 'President, Mob 9744412968, '
+      img: 'b7.jpg'
+    -
+      name: 'Vasanthi T A'
+      desc: 'Secretary, Mob 9495064581'
+      img: 'b10.jpg'
+    
+
+  otherMembers:
+    title: 'Board of Directors'
+    subtitle:
+      - 'Add info'
+      - 'Add info'
+    memberlist:
+      -
+        name: 'BABU MATHEW'
+        desc: 'Details'
+      -
+        name: 'MANAF T M'
+        desc: 'Details'
+      -
+        name: 'SALIM P M'
+        desc: 'Details'
+      -
+        name: 'RAHUL K'
+        desc: 'Details'
+      -
+        name: 'DEJI K SEBASTIAN'
+        desc: 'Details'
+      -
+        name: 'MOLY THAMBI'
+        desc: 'Details'
+      -
+        name: 'SELINA JOHN'
+        desc: 'Details'
+      -
+        name: 'KAMALA K C'
+        desc: 'Details'
+
+mediapage:
+  section1:
+    title: "Downloads"
+    subtitle:
+      - "Application forms, Reports, Circulars"
+      - "Notice etc"
+    files:
+      -
+        title: 'Add info'
+        desc: 'Add info'
+        date: 'May 11th 2018'
+        file: 'file.pdf'
+      -
+        title: 'Add info'
+        desc: 'Brochure.'
+        date: 'Add date'
+        file: 'file.pdf'
+      -
+        title: 'File title'
+        desc: 'Add info.'
+        date: 'Add date'
+        file: 'file.pdf'
+      -
+        title: 'File title'
+        desc: 'Add info.'
+        date: 'Add date'
+        file: 'file.pdf'
+  section2:
+    title: "Recent Pictures"
+    subtitle:
+      - "Pictures of Various Programmes "
+      - "Click on"
+    images:
+    - '5.jpg'
+    - '6.jpg'
+    - '7.jpg'
+    - '8.jpg'
+    - '9.jpg'
+    - '10.jpg'
+    - '11.jpg'
+    - '12.jpg'
+    - '13.jpg'
+    - '14.jpg'
+    - '15.jpg'
+    - '16.jpg'
+    - '17.jpg'
+    - '18.jpg'
+    - '19.jpg'
+    - '20.jpg'
+
+contactpage:
+  title: "Contact us"
+  subtitle:
+    - "Add info"
+    - "Add info"
+  address: 
+    title: "Headquarters"
+    addresslines:
+      - "Engapuzha Po. "
+      - "Kozhikode, Kerala State"
+      - "India, Pin.673586 "
+  contact:
+    title: "Get In Touch"
+    contactlist:
+      - "Telephone: 0495 2235227"
+      - "FAX: "
+      - "E-mail: kuppayakode@gmail.com"
+
+newspage:
+  title: "Activities"
+  subtitle:
+    - "Get online, off the field "
+    - "Read about our recent activities "
+
+footer:
+  address:
+    - "Engapuzha Po"
+    - "Kozhikode, Kerala State."
+
+  phone:
+    - "0495 2235227"
+
+  subtitle: "Add info"
+
+  socialmedia:
+    twitter: "www.facebook.com"
+    facebook: "www.facebook.com"
+    chrome: "www.facebook.com"
+    linkedin: "www.facebook.com"
+    pinterest: "www.facebook.com"
+
+
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# Sidebar
+sidebar: right
+widgets:
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
+
+# display widgets at the bottom of index pages (pagination == 2)
+index_widgets:
+# - category
+# - tagcloud
+# - archive
+
+# widget behavior
+archive_type: 'monthly'
+show_count: false
+
+# Miscellaneous
+google_analytics:
+gauges_analytics:
+favicon: /favicon.png
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:

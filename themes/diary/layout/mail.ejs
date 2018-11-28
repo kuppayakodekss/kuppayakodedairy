@@ -1,0 +1,31 @@
+	<!-- mail -->
+	<div class="mail">
+		<!-- container -->
+		<div class="container">			
+			<div class="mail-grids">
+				<div class="col-md-6 mail-grid-left wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+					<h3><%= theme.contactpage.title %></h3>
+					<h5>
+						<% for (var i in theme.contactpage.subtitle){ %>
+				            <span><%= theme.contactpage.subtitle[i]%></span>
+				        <% } %>
+				    </h5>
+					<h4><%= theme.contactpage.address.title %></h4>
+					<p>
+						<% for (var i in theme.contactpage.address.addresslines){ %>
+							<span><%= theme.contactpage.address.addresslines[i]%></span>
+						<% } %>
+					</p>
+					<h4><%= theme.contactpage.contact.title %></h4>
+					<p>
+						<% for (var i in theme.contactpage.contact.contactlist){ %>
+							<span><%= theme.contactpage.contact.contactlist[i]%></span>
+						<% } %>
+					</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //mail -->

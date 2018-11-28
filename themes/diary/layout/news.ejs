@@ -1,0 +1,27 @@
+	  <!-- news -->
+  <div class="news">
+    <div class="container">
+      <div class="news-text">
+        <h3><%= theme.newspage.title %></h3>
+        <h5>
+          <% for (var i in theme.newspage.subtitle){ %>
+            <span><%= theme.newspage.subtitle[i]%></span>
+          <% } %>
+        </h5>
+      </div>
+      <div class="news-grids">
+      	<% site.posts.each(function(post, i){ %>
+        <div class="col-md-3 news-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+          <h4><a href="<%- url_for(post.path) %>"><%= post.title %></a></h4>
+          <span><%= post.date.format("MMM Do YYYY") %></span>
+          <a href="<%- url_for(post.path) %>"><img src="<%- url_for("images/" + post.pic)%>" alt="" /></a>
+          <div class="news-info">
+            <p><%= post.desc %></p>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+  </div>
+  <!-- //news -->
+

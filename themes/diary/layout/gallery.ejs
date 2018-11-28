@@ -1,0 +1,26 @@
+<!-- products-bottom -->
+<div class="products-bottom">
+	<!-- container -->
+	<div class="container">
+		<div class="news-text">
+			<h3 class="wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;"><%= theme.mediapage.section2.title %></h3>
+			<h5>
+				<% for (var i in theme.mediapage.section2.subtitle){ %>
+	              <span><%= theme.mediapage.section2.subtitle[i]%></span>
+	            <% } %>
+			</h5>
+		</div>
+		<div class="products-bottom-grids">
+			<div class="gallery-grids">
+				<% for (var i in theme.mediapage.section2.images){ %>
+					<div class="gallery-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+						 <a class="fancybox" href="<%- url_for("images/" + theme.mediapage.section2.images[i])%>" data-fancybox-group="gallery"><img src="<%- url_for("images/" + theme.mediapage.section2.images[i])%>" class="img-style row6" alt=""><span> </span></a>					
+					</div>
+				<% } %>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //container -->
+</div>
+<!-- products-bottom -->

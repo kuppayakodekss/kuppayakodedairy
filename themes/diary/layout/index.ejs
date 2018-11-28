@@ -1,0 +1,86 @@
+  <!-- banner-bottom -->
+  <div class="banner-bottom">
+    <!-- container -->
+    <div class="container">
+      <div class="banner-bottom-grids">
+        <div class="col-md-7 banner-bottom-grid-text">
+          <div class="jumbotron banner-bottom-left wow fadeInLeft animated" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s;  ">
+            <h3><%= theme.homepage.section1.title %></h3>
+            <h5>
+              <% for (var i in theme.homepage.section1.subtitle){ %>
+                <span><%= theme.homepage.section1.subtitle[i]%></span>
+              <% } %>
+           </h5>
+            <p>
+              <% for (var i in theme.homepage.section1.body){ %>
+                <span><%= theme.homepage.section1.body[i]%></span>
+              <% } %>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-5 banner-bottom-right wow fadeInRight animated" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s;">
+          <img src="images/2.jpg" alt=""/>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+    <!-- //container -->
+  </div>
+  <!-- //banner-bottom -->  
+  
+  <!-- specialty -->
+  <div class="specialty">
+    <!-- container -->
+    <div class="container">
+      <div class="col-md-5 specialty-info wow fadeInLeft animated" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s;">
+        <h3><%= theme.homepage.section2.title %></h3>
+        <h5>
+            <% for (var i in theme.homepage.section2.subtitle){ %>
+              <span><%= theme.homepage.section2.subtitle[i]%></span>
+            <% } %>
+          </h5>
+        <p>
+          <% for (var i in theme.homepage.section2.body){ %>
+                <span><%= theme.homepage.section2.body[i]%></span>
+          <% } %>
+        </p>
+      </div>
+      <div class="col-md-7 specialty-grids">
+        <div class="specialty-grids-top">
+          <% for (var i in theme.homepage.section2.services){ %>
+            <div class="col-md-6 service-box wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+            <figure class="icon">
+              <img src="<%- url_for("images/" + theme.homepage.section2.services[i].img)%>" alt="" />
+            </figure>
+            <h5><%= theme.homepage.section2.services[i].title %></h5>
+            <p><%= theme.homepage.section2.services[i].subtitle %></p>
+          </div>
+          <%} %>
+        </div>
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+    <!-- //container -->
+  </div>
+  <!-- //specialty -->
+
+  <!-- testimonials -->
+  <div class="testimonials">
+    <div class="container">
+      <div class="testimonial-nfo wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+        <h3>Testimonials</h3>
+        <h5>
+          <% for (var i in theme.homepage.section3.subtitle){ %>
+                <span><%= theme.homepage.section3.subtitle[i]%></span>
+          <% } %>
+        </h5>
+      </div>
+      <div class="testimonial-grids wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+        <div class="testimonial-grid">
+          <p><span>"</span> <%= theme.homepage.section3.testimonial %><span> "</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //testimonials -->
+
